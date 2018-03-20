@@ -1,8 +1,8 @@
 <?php
 
-define('ONELOGIN_METADATA_BASE', 'https://app.onelogin.com/saml/metadata/');
-define('ONELOGIN_SSO_BASE', 'https://app.onelogin.com/trust/saml2/http-post/sso/');
-define('ONELOGIN_SLO_BASE', 'https://app.onelogin.com/trust/saml2/http-redirect/slo/');
+if (!defined('ONELOGIN_METADATA_BASE')) define('ONELOGIN_METADATA_BASE', 'https://app.onelogin.com/saml/metadata/');
+if (!defined('ONELOGIN_SSO_BASE')) define('ONELOGIN_SSO_BASE', 'https://app.onelogin.com/trust/saml2/http-post/sso/');
+if (!defined('ONELOGIN_SLO_BASE')) define('ONELOGIN_SLO_BASE', 'https://app.onelogin.com/trust/saml2/http-redirect/slo/');
 
 $appId = Mage::getStoreConfig('dev/onelogin/app_id');
 
